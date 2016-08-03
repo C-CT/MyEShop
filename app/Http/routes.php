@@ -48,7 +48,7 @@ Route::delete('/', function () {
 
     Route::get('/blog/post/{id}', "myController@blog_post");
 
-    Route::get('/search/{key-word}', "myController@search");
+    Route::get('/search/{key_word}',"myController@search");
 
     Route::get('/cart', "myController@cart");
 
