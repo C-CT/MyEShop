@@ -24,6 +24,33 @@ Route::delete('/', function () {
 });
 */
 
-route::get("/","myResourceController@index");
+//Route::get("/","myResourceController@index");
 
-route::get("/show/{name}","myResourceController@show");
+//Route::get("/show/{name}","myResourceController@show");
+
+   Route::get('/', "myController@index");
+
+    Route::get('/contact_us', "myController@contact_us");
+
+    Route::get('/login', "myController@login");
+
+    Route::get('/logout', "myController@logou");
+
+    Route::get('/products', "myController@products");
+
+    Route::get('/products/category', "myController@products_category");
+
+    Route::get('/products/brands', "myController@products_brands");
+
+    Route::get('/products/details/{id}', "myController@products_details");
+
+    Route::get('/blog', "myController@blog");
+
+    Route::get('/blog/post/{id}', "myController@blog_post");
+
+    Route::get('/search/{key-word}', "myController@search");
+
+    Route::get('/cart', "myController@cart");
+
+    Route::get('/checkout', "myController@checkout");
+    
