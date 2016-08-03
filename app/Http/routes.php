@@ -10,7 +10,7 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-
+/*
 Route::get('/', function () {
     return view('welcome');
 });
@@ -22,3 +22,8 @@ Route::post('/', function () {
 Route::delete('/', function () {
     return view('welcome');
 });
+*/
+
+route::get("/","myResourceController@index");
+
+route::get("/show/{name}","myResourceController@show");
