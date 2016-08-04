@@ -24,11 +24,11 @@ Route::delete('/', function () {
 });
 */
 
-Route::get("/","myResourceController@index");
+//Route::get("/","myResourceController@index");
 
 //Route::get("/show/{name}","myResourceController@show");
 
-//    Route::get('/', "myController@index");
+    Route::get('/', "myController@index");
 
     Route::get('/contact_us', "myController@contact_us");
 
